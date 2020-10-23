@@ -2,7 +2,7 @@
 
 ### Send OSC messages to a web browser from [Happy Brackets](https://happybrackets.net/).  
 
-This example uses the Happy Brackets [AccelerometerListener](https://www.happybrackets.net/doc/net/happybrackets/device/sensors/AccelerometerListener.html) and [OSCUDPSender](https://www.happybrackets.net/doc/net/happybrackets/core/OSCUDPSender.html) to send real-time sensor data as OSC messages to a Node.js server.  
+This example uses the Happy Brackets [AccelerometerListener](https://www.happybrackets.net/doc/net/happybrackets/device/sensors/AccelerometerListener.html) and [OSCUDPSender](https://www.happybrackets.net/doc/net/happybrackets/core/OSCUDPSender.html) to send real-time sensor data as OSC messages to a WebSocket server in Node.js.  
 
 This code uses [osc.js](https://github.com/colinbdclark/osc.js/) and was adapted from this [this example](https://github.com/colinbdclark/osc.js-examples/tree/master/udp-browser).
 
@@ -51,7 +51,7 @@ new AccelerometerListener(hb) {
 };
 ```
 
-# Tips
+## Tips
 
 This example uses IP `192.168.0.100`.  You may need to update this value using your own local IP address.   [How to find your local IP address](https://apple.stackexchange.com/a/212207).
 
