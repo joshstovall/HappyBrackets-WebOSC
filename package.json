@@ -1,16 +1,14 @@
 {
-    "name": "happybrackets_webOSC",
+    "name": "HappyBrackets-WebOSC",
     "main": "index.js",
     "version": "1.0.0",
     "description": "Example of how to send OSC messages from Happy Brackets to a web browser.",
     "author": "Josh Stovall",
-    "homepage": "http://github.com/joshstovall",
     "repository": {
         "type": "git",
-        "url": "git://github.com/joshstovall/happybrackets_webOSC"
+        "url": "git://github.com/joshstovall/HappyBrackets-WebOSC"
     },
-    "readmeFilename": "README.md",
-    "license": "(MIT OR GPL-2.0)",
+    "license": "MIT",
     "keywords": [
         "Open Sound Control",
         "OSC",

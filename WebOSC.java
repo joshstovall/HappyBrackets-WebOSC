@@ -8,8 +8,8 @@ public class WebOSC implements HBAction {
     @Override
     public void action(HB hb) {
         hb.reset();
-        OSCUDPSender oscSend = new OSCUDPSender();
 
+        OSCUDPSender oscSend = new OSCUDPSender();
 
         new AccelerometerListener(hb) {
             @Override
@@ -17,8 +17,8 @@ public class WebOSC implements HBAction {
                 oscSend.send(HB.createOSCMessage("/hb/accelData", x_val, y_val, z_val), "192.168.0.100", 7400);
             }
         };
-    }
 
+    }
 
     //<editor-fold defaultstate="collapsed" desc="Debug Start">
 
