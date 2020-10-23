@@ -9,11 +9,11 @@ This code uses [osc.js](https://github.com/colinbdclark/osc.js/) and was adapted
 ## Installation
 ### Install dependencies via npm
 ```bash 
-cd HappyBrackets-WebOSC
+cd HappyBrackets-WebOSC/    
 npm install
 ```
 ```bash 
-cd HappyBrackets-WebOSC/web/
+cd HappyBrackets-WebOSC/web/    
 npm install
 ```
 
@@ -21,13 +21,13 @@ npm install
 ### Start  Node.js server
 Open Terminal, `cd` to the root directory, and start the Node.js server. 
 ```bash 
-cd HappyBrackets-WebOSC
+cd HappyBrackets-WebOSC/    
 node .
 ```
 ### Start web server
 In a seperate Terminal window, `cd` to the `web` folder, and start a web server. 
 ```bash
-cd HappyBrackets-WebOSC/web/
+cd HappyBrackets-WebOSC/web/    
 php -S 0.0.0.0:9898
 ```
 Once the server is running, you can access the web page via [http://localhost:9898](http://localhost:9898).  You may also open the page from other devices on the network using your [local IP address](https://apple.stackexchange.com/a/212207). For example [http://192.168.0.100:9898](http://192.168.0.100:9898).
@@ -54,4 +54,3 @@ new AccelerometerListener(hb) {
 ## Tips
 
 This example uses IP `192.168.0.100`.  You may need to update this value using your own local IP address.   [How to find your local IP address](https://apple.stackexchange.com/a/212207).
-
