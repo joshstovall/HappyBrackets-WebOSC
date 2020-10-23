@@ -23,7 +23,7 @@ node .
 ### Start web server
 In a seperate Terminal window, `cd` to the `web` folder, and start a web server. 
 ```bash
-cd HappyBrackets-WebOSC/web
+cd HappyBrackets-WebOSC/web/
 php -S 0.0.0.0:9898
 ```
 This starts the web server at `localhost:9898` for the web page.   Once the server is running, you can access the web page via [http://localhost:9898](http://localhost:9898).
