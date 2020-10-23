@@ -30,27 +30,25 @@ In a seperate Terminal window, `cd` to the `web` folder, and start a web server.
 cd HappyBrackets-WebOSC/web
 php -S 0.0.0.0:9898
 ```
-Once the server is running, you can access the web page via [http://localhost:9898](http://localhost:9898).  You may also open the page from other devices on the network using your [local IP address](https://apple.stackexchange.com/a/212207). For example [http://192.168.0.100:9898](http://192.168.0.100:9898).
+Once the server is running, you can access the web page via [http://localhost:9898](http://localhost:9898).  
+
+You may also open the page from other devices on the network using your local IP address. For example [http://192.168.0.100:9898](http://192.168.0.100:9898).
 
 ## Happy Brackets Setup
 To setup the Happy Brackets file, simply drag the [WebOSC.java](WebOSC.java) file into your Happy Brackets project folder. 
 
-**OR** 
-
-you can create a new file 
-1. Open IntelliJ
-2. File > New > HappyBracketsSketch
-3. Paste the following code directly after `hb.reset()`
-```java 
-OSCUDPSender oscSend = new OSCUDPSender();  
-new AccelerometerListener(hb) {  
-    @Override
-    public void sensorUpdated(float x_val, float y_val, float z_val) {
-        oscSend.send(HB.createOSCMessage("/hb/accelData", x_val, y_val, z_val), "0.0.0.0", 7400);  
-    }
-};
-```
-
 ## Tips
 
-This example uses IP `192.168.0.100`.  You may need to update this value using your own local IP address.   [How to find your local IP address](https://apple.stackexchange.com/a/212207).
+This example uses IP `192.168.0.100`.  You may need to replace this value with your own local IP address.   [How to find your local IP address](https://apple.stackexchange.com/a/212207).
+
+#### 2 places to update the IP
+[index.html](/web/index.html) line `12`
+```javascript
+var port = new osc.WebSocketPort({
+    url: "ws://192.168.0.100:8081" // replace this with your local IP
+});
+```
+[WebOSC.java](WebOSC.java) line `17`
+```javascript
+oscSend.send(HB.createOSCMessage("/hb/accelData", x_val, y_val, z_val), "192.168.0.100", 7400);
+```
