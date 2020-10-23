@@ -7,7 +7,7 @@ This example uses the Happy Brackets [AccelerometerListener](https://www.happybr
 This code uses [osc.js](https://github.com/colinbdclark/osc.js/) and was adapted from this [this example](https://github.com/colinbdclark/osc.js-examples/tree/master/udp-browser).
 
 ## Installation
-### Install dependencies via npm
+ Install dependencies via npm
 ```bash 
 cd HappyBrackets-WebOSC
 npm install
@@ -25,7 +25,7 @@ cd HappyBrackets-WebOSC
 node .
 ```
 ### Start web server
-In a seperate Terminal window, `cd` to the `web` folder, and start a web server. 
+In a seperate Terminal window, `cd` to the `web` folder, and start the web server. 
 ```bash
 cd HappyBrackets-WebOSC/web
 php -S 0.0.0.0:9898
@@ -38,7 +38,6 @@ You may also open the page from other devices on the network using your local IP
 To setup the Happy Brackets file, simply drag the [WebOSC.java](WebOSC.java) file into your Happy Brackets project folder. 
 
 ## Tips
-
 This example uses IP `192.168.0.100`.  You may need to replace this value with your own local IP address.   [How to find your local IP address](https://apple.stackexchange.com/a/212207).
 
 #### 2 places to update the IP
