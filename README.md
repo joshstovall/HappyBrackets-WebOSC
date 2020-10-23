@@ -9,12 +9,12 @@ This code uses [osc.js](https://github.com/colinbdclark/osc.js/) and was adapted
 ## Installation
 ### Install dependencies via npm
 ```bash 
-cd HappyBrackets-WebOSC
+cd HappyBrackets-WebOSC/
 
 npm install
 ```
-```bash 
-cd HappyBrackets-WebOSC/web
+```sh 
+cd HappyBrackets-WebOSC/web/
 
 npm install
 ```
@@ -23,14 +23,14 @@ npm install
 ### Start  Node.js server
 Open Terminal, `cd` to the root directory, and start the Node.js server. 
 ```bash 
-cd HappyBrackets-WebOSC
+cd HappyBrackets-WebOSC/
 
 node .
 ```
 ### Start web server
 In a seperate Terminal window, `cd` to the `web` folder, and start a web server. 
 ```bash
-cd HappyBrackets-WebOSC/web
+cd HappyBrackets-WebOSC/web/
 
 php -S 0.0.0.0:9898
 ```
